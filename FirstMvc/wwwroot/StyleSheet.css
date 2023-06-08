@@ -1,0 +1,11 @@
+﻿.content{
+    color: black;
+    border:dashed;
+    border-color: blueviolet;
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color:greenyellow;
+}
