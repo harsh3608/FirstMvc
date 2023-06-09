@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "About Us";
+    List<City> cities = ViewBag.Cities;
 }
 
 <!DOCTYPE html>
@@ -16,6 +17,26 @@
         <h1>About Us</h1>
         <div>
             <h5>This Page is Under Development.</h5>
+        </div>
+
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>City ID</th>
+                        <th>City Name</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var city in cities)
+                    {
+                        <tr>
+                            <td>@city.CityID</td>
+                            <td>@city.CityName</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
         </div>
         
     </div>
