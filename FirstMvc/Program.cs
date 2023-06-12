@@ -10,7 +10,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 });
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+//builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
